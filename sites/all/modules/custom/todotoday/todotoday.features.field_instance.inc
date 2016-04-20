@@ -42,7 +42,7 @@ function todotoday_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_due_date',
     'label' => 'Due Date',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -51,15 +51,9 @@ function todotoday_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 0,
       'module' => NULL,
-      'settings' => array(
-        'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'text_parts' => array(),
-        'year_range' => '-3:+3',
-      ),
+      'settings' => array(),
       'type' => NULL,
       'weight' => -2,
     ),
